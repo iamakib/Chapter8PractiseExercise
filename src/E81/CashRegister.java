@@ -7,7 +7,7 @@ public class CashRegister {
     public  CashRegister(){
         payment = 0;
     }
-    public void receivePayment(int coinCount, E82.Coin coinType){
+    public void receivePayment(int coinCount, Coin coinType){
 
         payment = payment + coinCount * coinType.getValue();
     }

@@ -1,16 +1,13 @@
 package E81;
-
-import E82.CashRegister;
-import E82.Coin;
-
 public class CashRegisterRunner {
     public static void main(String[] args) {
-        E82.Coin quarter = new E82.Coin(0.25,"Quarter");
-        E82.Coin dime = new E82.Coin(0.1,"Dime");
-        E82.Coin nickel = new E82.Coin(0.05,"Nickel");
-        E82.Coin penny = new Coin(0.01,"Penny");
 
-        E82.CashRegister cashRegister = new CashRegister();
+        Coin quarter = new Coin(0.25,"Quarter");
+        Coin dime = new Coin(0.1,"Dime");
+        Coin nickel = new Coin(0.05,"Nickel");
+        Coin penny = new Coin(0.01,"Penny");
+
+        CashRegister cashRegister = new CashRegister();
 
 
         cashRegister.receivePayment(3,quarter);
